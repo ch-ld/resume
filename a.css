@@ -1,54 +1,54 @@
+
 body{
     background: black;
-    color: white;
 }
-
 a{
-    color: inherit;
     text-decoration: none;
 }
-
-.clearfix::after {
+.clearfix::after{
     content: '';
     display: block;
     clear: both;
 }
-.topNavBar > nav > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/*上面不要看*/
+.topNavBar {
 }
-.topNavBar > nav > ul > li {
+.topNavBar .logo {
+    font-family: "Hiragino Kaku Gothic Std";
+    font-size: 22px;
+    padding-top: 1px;
+}
+.topNavBar .logo .rs{
+    color: #e6686a;
+    margin-right: 4px;
+}
+.topNavBar .logo .card{
+    color: #9A9DA2;
+}
+
+.topNavBar nav {
+    font-size: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.topNavBar nav a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: bold;
+}
+.topNavBar nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.topNavBar nav ul>li{
     float: left;
     margin-left: 17px;
     margin-right: 17px;
 }
-
-.topNavBar > nav > ul > li > a {
-    font-style: 12;
-    color: #B7B7B7;
-    text-decoration: none;
-    font-weight: bold;
+.topNavBar nav ul>li>a{
     border-bottom: 3px solid transparent;
-    border-top: 3px solid transparent;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: block;
 }
-
-.topNavBar > nav > ul > li > a:hover {
-    border-bottom: 3px solid #e06567;
-}
-
-.topNavBar .logo .rs{
-    font-size: 24;
-    font-family: "Arial Black";
-    margin-right: 4px;
-    color: #E6686A;
-}
-
-.topNavBar .logo .card {
-    font-size: 24;
-    font-family: "Arial Black";
-    color: #9A9DA2;
+.topNavBar nav ul>li>a:hover{
+    border-bottom-color: #DC6465;
 }
